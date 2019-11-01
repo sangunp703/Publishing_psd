@@ -96,3 +96,39 @@ header{
 .people button{
     margin: 20px 0px;
 }
+
+.news {
+    text-align: center;
+}
+.news > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.news .post1 {
+    display: grid;
+    width:1599px;
+    grid-template-columns: repeat(3, 533px);
+    grid-auto-rows: 100px;
+    margin: 20px auto;
+}
+.news .post1 img{
+    float:left;
+}
+.news .post2 {
+    display: grid;
+    width:1540px;
+    grid-template-columns: repeat(3, 500px);
+    grid-gap: 20px;
+    margin: 20px auto;
+}
+.news .post2 .bigPost:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.news .post2 .bigPost:nth-of-type(2){
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
