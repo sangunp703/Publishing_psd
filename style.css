@@ -9,6 +9,7 @@ header{
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     height: 40px;
+    margin-bottom: 100px;
 }
 .left_link > ul > li{
     display: block;
@@ -38,4 +39,36 @@ header{
     font-weight: bold;
     text-decoration: none;
     color: black;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    grid-template-rows: 1fr 1fr;
+}
+.main .icon {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.main .icon li {
+    margin-bottom: 25px;
+}
+.main .image {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+}
+.main .list{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    padding: 100px;
+}
+.main .list li{
+    margin-bottom: 20px;
+    list-style-type: decimal;
+}
+.main .list a{
+    text-decoration: none;
+    color: gray;
 }
