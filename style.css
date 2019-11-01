@@ -4,6 +4,10 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+body{
+    width: 1920px;
+    margin: auto auto;
+}
 header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -45,6 +49,7 @@ header{
     display: grid;
     grid-template-columns: 2fr 7fr 3fr;
     grid-template-rows: 1fr 1fr;
+    margin-bottom: 50px;
 }
 .main .icon {
     grid-row-start: 1;
@@ -71,4 +76,23 @@ header{
 .main .list a{
     text-decoration: none;
     color: gray;
+}
+
+.people{
+    text-align: center;
+    margin: 20px 0px;
+}
+.people .nav li{
+    margin: 0px 10px;
+    display: inline;
+}
+.people .photo{
+    display: grid;
+    width: 1600px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 500px;
+    margin: 20px auto;
+}
+.people button{
+    margin: 20px 0px;
 }
