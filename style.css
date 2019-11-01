@@ -3,11 +3,12 @@
 body::-webkit-scrollbar{
     display: none;
 }
-
 body{
     width: 1920px;
     margin: auto auto;
 }
+
+/* header */
 header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -45,6 +46,8 @@ header{
     color: black;
 }
 
+/* section */
+/* article - main */
 .main {
     display: grid;
     grid-template-columns: 2fr 7fr 3fr;
@@ -78,6 +81,7 @@ header{
     color: gray;
 }
 
+/* article - people */
 .people{
     text-align: center;
     margin: 20px 0px;
@@ -97,6 +101,7 @@ header{
     margin: 20px 0px;
 }
 
+/* article - news */
 .news {
     text-align: center;
 }
@@ -131,4 +136,30 @@ header{
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+
+/* footer */
+.foot-title{
+    margin: 20px 0px;
+}
+.foot-title h1{
+    float:left;
+    font-size:20px;
+    font-weight: bold;
+}
+.copylight {
+    margin: 20px 0px;
+}
+.foot-title p{
+    float:right;
+}
+.foot-icons{
+    margin: 20px 0px;
+    float:right;
+}
+.foot-icons ul li{
+    display: inline;
+}
+#clear{
+    clear:both;
 }
