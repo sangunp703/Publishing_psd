@@ -70,7 +70,7 @@ header{
 .right_link > ul::after{
     clear: both;
 }
-.title > a {
+.header__title > a {
     font-size: 50px;
     font-weight: bold;
     text-decoration: none;
@@ -101,6 +101,9 @@ section{
     z-index: 1;
     transform: translate(-50%, -50%);
 }
+.main__representative p {
+    cursor: default;
+}
 .main__representative p:first-child{
     font-size: 6rem;
     margin-bottom: 3rem;
@@ -112,6 +115,38 @@ section{
     position: relative;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+.icon__line {
+    width: 50px;
+    position: absolute;
+    border: 1px solid black;
+    margin-left: -40px;
+    left: 0;
+    top: 47%;
+
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+
+    -ms-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+}
+.icon__num {
+    position: absolute;
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+
+    -ms-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    top: 60%;
+    font-weight: bold;
 }
 .icon__view {
     position: absolute;
@@ -203,12 +238,13 @@ section{
 .people .nav li a{
     color: gray;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 10px;
 }
 .people .nav li a:hover{
     color: black;
     font-weight: bold;
-    text-decoration: underline;
+    border-bottom: 1.5px solid black;
 }
 .people .photo{
     display: grid;
@@ -274,11 +310,17 @@ section{
 /* article - news */
 .news {
     text-align: center;
+    margin-bottom: 200px;
 }
 .news > h2 {
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 50px;
+}
+.news__line{
+    width: 10%;
+    align-self: center;
+    border: 1px solid black;
 }
 .news .post1 {
     display: grid;
@@ -287,6 +329,7 @@ section{
     justify-content: center;
     font-size: 1.7rem;
     margin: 100px auto;
+    margin-top: 50px;
     text-align: left;
 }
 .small-post {
@@ -327,10 +370,67 @@ section{
     grid-column: 3/3;
     grid-row: 1/3;
 }
+.big-post{
+    position: relative;
+}
+.big-post__content{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: #b4d3d3;
+    text-align: left;
+}
+.big-post__play {
+    content: url('./resource/play-button.png');
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.big-post__title{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-size: 2rem;
+    color: white;
+}
+.title{
+    text-align: left;
+    font-size: 2rem;
+    color: black;
+}
+.date {
+    text-align: left;
+    font-size: 1rem;
+    color: gray;
+}
+.stick-bottom {
+    position: absolute;
+    bottom: 0;
+}
+.margin-top{
+    margin-top: 20px;
+}
+.big-post__date{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    font-size: 1rem;
+    color: white;
+}
+.img1{
+    height: 100%;
+}
+.img2{
+    height: 85%;
+}
+.img3 {
+    height: 70%;
+}
 .big-post__post{
     content: url('./resource/post1.PNG');
-    width: 100%;
-    height: 100%;
+    width: 100%
 }
 
 /* footer */
@@ -352,6 +452,7 @@ footer{
     font-size: 10px;
     color: darkgray;
     margin-top: 50px;
+    cursor: default; 
 }
 .foot-title .link{
     text-decoration: none;
