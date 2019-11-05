@@ -296,6 +296,19 @@ section{
     height: 100%;
     opacity: 0;
 }
+.profile__arrow{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 40px;
+    background-color: #b4d3d3;
+}
+.profile__arrow-image{
+    content: url('./resource/arrow-pointing-north-west.png');
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+}
 .profile__hover:hover{
     opacity: 0.6;
     transition-duration: 1s;
