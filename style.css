@@ -43,7 +43,7 @@ body{
 }
 
 /* header */
-header{
+.header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
@@ -52,7 +52,7 @@ header{
     margin-top: 50px;
     margin-bottom: 180px;
 }
-.left_link > ul > li{
+.left_link__item {
     display: block;
     height: 30px;
     line-height: 30px;
@@ -60,45 +60,44 @@ header{
     margin: auto auto;
     margin-right: 30px;
 }
-.left_link > ul > li > a {
+.left_link__to {
     font-size: 20px;
     vertical-align: middle;
     text-decoration: none;
     color: black;
 }
-.left_link > ul > li > a:hover{
+.left_link__to:hover{
     font-size: 22px;
     font-weight: bold;
     transition-duration: 1.5s;
     transform: translate(-50%, -50%);
 }
-.left_link > ul::after{
+.left_link::after{
     clear: both;
 }
-.left_link__menu{
-    content: url('./resource/menu.png');
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-}
-.right_link > ul > li {
+.right_link__item {
     float: right;
     margin-left: 20px;
 }
-.right_link > ul::after{
+.right_link::after{
     clear: both;
 }
-.header__title > a {
+.title__to{
     font-size: 50px;
     font-weight: bold;
     text-decoration: none;
     color: black;
 }
-.right_link__search{
-    content: url('./resource/search.png');
+.header__icon{
     width: 30px;
     height: 30px;
     vertical-align: middle;
+}
+.icon-menu {
+    content: url('./resource/menu.png');
+}
+.icon-search{
+    content: url('./resource/search.png');
 }
 
 /* section */
@@ -438,7 +437,7 @@ section{
     line-height: 70px;
     font-weight: bold;
 }
-.title{
+.big-post__title2{
     text-align: left;
     font-size: 2rem;
 }
