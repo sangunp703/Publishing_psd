@@ -1,7 +1,7 @@
-publish web design psd file<br />
+# Mi Talent
 
-2018 MI Talent. Designed by Tramautritam for Mass Impressions<br />
+psd 파일을 이용해 퍼블리싱 작업
 
-screenshot
-----------
-![screenshot](https://user-images.githubusercontent.com/42243710/68217054-4c2c8f00-0025-11ea-9e29-b82a053dd9ce.PNG)
+## 스크린샷
+
+<img src='screenshot/Mitalent.png'>
